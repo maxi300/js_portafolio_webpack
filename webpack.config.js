@@ -11,10 +11,10 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin'); // Agregado para
 module.exports = {
   entry: './src/index.js',
   output: {
-    filename: '[name].[contenthash].js', // Añadido hash para caché
     path: path.resolve(__dirname, 'dist'),
+    filename: '[name].[contenthash].js',
     assetModuleFilename: 'assets/images/[hash][ext][query]',
-    clean: true, // Limpia la carpeta dist en cada build
+    clean: true, // Esto borra la carpeta dist automáticamente antes de crearla
   },
   resolve: {
     extensions: ['.js', '.jsx'],
