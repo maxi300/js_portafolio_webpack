@@ -14,7 +14,7 @@ module.exports = {
     path: path.resolve(__dirname, 'dist'),
     filename: '[name].[contenthash].js',
     assetModuleFilename: 'assets/images/[hash][ext][query]',
-    clean: true, // Esto borra la carpeta dist automáticamente antes de crearla
+   
   },
   resolve: {
     extensions: ['.js', '.jsx'],
